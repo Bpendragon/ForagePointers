@@ -2,7 +2,7 @@
 <!-- TOC -->
 
 - [Forage Pointers](#forage-pointers)
-    - [Short Desctiption](#short-desctiption)
+    - [Short Description](#short-description)
     - [Long Description](#long-description)
     - [Installation](#installation)
     - [Dependencies](#dependencies)
@@ -13,7 +13,7 @@
 
 <!-- /TOC -->
 
-## Short Desctiption
+## Short Description
 
 Adds little arrows over forage that is currently on screen.
 
@@ -48,8 +48,12 @@ None beyond SMAPI
 | `ScalingRadius` | `int` | `1` | 0-50 | How many tiles the viewing radius increases by when it scales, set this to `0` to never increase, values over about `10` are impractical if they start reaching outside the bounding box of the viewport. |
 | `MinimumViewDistance` | `int` | `3` | 0-100 | The radius at which items will be marked at level 0. |
 | `AlwaysShow` | `bool` | `false` | `true`, `false` | If set to `true` the mod will act as if you have the Tracker profession, even if you are level 0. Does not extend beyond the screen, but all forage on screen will be marked. |
+| `BlinkPointers` | `bool` | `true` | `true`, `false` | If set to true, on screen pointers will blink occasionally as defined below. |
+| `NumFramesArrowsOn` | `uint` | 50 | 1-int.MaxValue | Approx. number of frames the arrows should be on before blinking off. Actually based on ticks, there is about 1 tick per frame, and 60 frames per second |
+| `NumFramesArrowsOff` | `uint` | 10 | 1-int.MaxValue | Approx. number of frames the arrows should be off before turning back on. |
+| `ShowArtifactSpots` | `bool` | `true` | `true`, `false` | If set to true, on screen pointers will point at Artifact Spots (aka "Worms" or "Twigs". |
 
-View Distance is calculated as `MinimumViewDistance + ((player.ForagingLevel/ScaleEveryNLevels) * ScalingRadius)` this is done as integer math and will only increase in discreet steps. 
+View Distance is calculated as `MinimumViewDistance + ((player.ForagingLevel/ScaleEveryNLevels) * ScalingRadius)` this is done as integer math and will only increase in discrete steps.
 
 ## Changelog
 

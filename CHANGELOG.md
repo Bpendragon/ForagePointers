@@ -4,10 +4,18 @@
 
 - [Changelog](#changelog)
     - [v1.0.0](#v100)
+    - [v0.0.1](#v001)
 
 <!-- /TOC -->
 
 ## v1.0.0
+
+* Allowed arrows to blink
+* Allowed User to turn off arrows on Artifact spots
+* Added config options for the above items
+
+
+## v0.0.1
 
 * Initial Release
 * Forage now gets a marker arrow on it when on screen
