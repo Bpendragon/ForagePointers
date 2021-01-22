@@ -40,7 +40,7 @@ None beyond SMAPI
 
 ## Configuration
 
-`config.json` contains four values, outlined below:
+`config.json` contains several values, outlined below:
 
 | Name | Type | Default Value | Acceptable Values | Notes |
 |-|-|-|-|-|
