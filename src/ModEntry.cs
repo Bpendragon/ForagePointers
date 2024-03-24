@@ -64,9 +64,9 @@ namespace ForagePointers
 
         private void OnHudRendering(object sender, RenderingHudEventArgs e)
         {
-            if (Context.IsWorldReady && shouldDraw)
+            if (Context.IsPlayerFree && shouldDraw) //Changing Context.IsWorldReady to Context.IsPlayerFree to avoid drawing pointer during event and when menu opened
             {
-                var loc = Game1.player.getTileLocation();
+                var loc = Game1.player.Tile; //getTileLocation removed
                 var viewDist = Math.Pow(MinimumViewDistance + (Game1.player.ForagingLevel / ScaleEveryNLevels * ViewScalingFactor), 2);
 
                 foreach (var v in Game1.currentLocation.objects.Pairs)
